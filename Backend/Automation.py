@@ -13,7 +13,7 @@ import asyncio
 import os
 
 env_vars = dotenv_values(".env")
-GroqAPIKey = env_vars.get("GroqAPIKey")
+GroqAPIKey = env_vars.get("______")
 
 classes = ["zCubwf", "hgKElc", "LTKOO sY7ric", "Z0LcW", "gsrt vk_bk FzvWSb YwPhnf", "pclqee", "tw-Data-text tw-text-small tw-ta",
            "IZ6rdc", "O5uR6d LTKOO", "vlzY6d", "webanswers-webanswers_table__webanswers-table", "dDoNo ikb4Bb gsrt", "sXLaOe",
@@ -201,4 +201,5 @@ async def Automation(commands: list[str]):
 
 if __name__ == "__main__":
     asyncio.run(Automation(["open WhatsApp", "play Ishq Hai"]))
+
     
