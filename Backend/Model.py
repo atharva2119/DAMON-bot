@@ -4,9 +4,9 @@ from dotenv import dotenv_values
 
 env_vars = dotenv_values(".env")
 
-#CohereAPIKey = env_vars.get("CohereAPIKey")
+CohereAPIKey = env_vars.get("______")
 
-#co = cohere.Client(api_key=CohereAPIKey)
+co = cohere.Client(api_key=CohereAPIKey)
 
 funcs = {
     "exit", "general", "realtime", "open", "close", "play",
@@ -91,4 +91,5 @@ def FirstLayerDMM(prompt: str = "test"):
     
 if __name__ == "__main__":
     while True:
+
         print(FirstLayerDMM(input(">>> ")))
