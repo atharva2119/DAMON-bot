@@ -8,7 +8,7 @@ env_vars = dotenv_values(".env")
 
 Username = env_vars.get("Username")
 Assistantname  = env_vars.get("Assistantname")
-GroqAPIKey = env_vars.get("GroqAPIKey")
+GroqAPIKey = env_vars.get("______")
 
 client = Groq(api_key=GroqAPIKey)
 
@@ -100,4 +100,5 @@ def RealtimeSearchEngine(prompt):
 if __name__ == "__main__":
     while True:
         prompt = input("Enter your Query: ")
+
         print(RealtimeSearchEngine(prompt))
