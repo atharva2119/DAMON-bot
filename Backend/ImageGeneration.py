@@ -24,7 +24,7 @@ def open_images(prompt):
         except IOError:
             print(f"Unable to open {image_path}")
 
-API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
+#API_URL = ""
 headers = {"Authorization": f"Bearer {get_key('.env', 'HuggingFaceAPIKey')}"}
 
 async def query(payload):
@@ -69,3 +69,4 @@ while True:
             sleep(1)
     except:
         pass
+
